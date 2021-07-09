@@ -2,7 +2,7 @@
 const url = "https://xivapi.com/character/";
 // var userKey = "1814929";
 
-var userKey = prompt("Darken - 7319592 Suki - 21317276 Pacl1 - 5004548 Pacl 2 - 35037559 Topher - 1814929 Zan - 9245936", "1814929");
+var userKey = prompt("Bouch - 6693414 Sev - 1585713 Pacl - 5004548 Crux - 12450522 Gristle - 1814929 Zan - 9245936", "1814929");
 
 
 

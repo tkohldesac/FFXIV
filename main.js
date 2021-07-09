@@ -69,15 +69,15 @@ async function getCharacter() {
 
             img.className = "icon";
 
-            if (jobName == "Paladin" || jobName == "Warrior" || jobName == "Gunbreaker" || jobName == "Dark Knight") {
+            if (jobName == "Paladin" || jobName == "Warrior" || jobName == "Gunbreaker" || jobName == "Dark Knight" || jobName == "Gladiator" || jobName == "Marauder") {
                 img.className = "icon tankIcon";
-            } else if (jobName == "White Mage" || jobName == "Astrologian" || jobName == "Scholar") {
+            } else if (jobName == "White Mage" || jobName == "Astrologian" || jobName == "Scholar" || jobName == "Conjurer") {
                 img.className = "icon healIcon";
-            } else if (jobName == "Monk" || jobName == "Dragoon" || jobName == "Ninja" || jobName == "Samurai") {
+            } else if (jobName == "Pugilist" || jobName == "Monk" || jobName == "Lancer" || jobName == "Dragoon" || jobName == "Rogue" || jobName == "Ninja" || jobName == "Samurai") {
                 img.className = "icon dpsIcon meleeIcon";
-            } else if (jobName == "Bard" || jobName == "Machinist" || jobName == "Dancer") {
+            } else if (jobName == "Archer" || jobName == "Bard" || jobName == "Machinist" || jobName == "Dancer") {
                 img.className = "icon dpsIcon rangedIcon";
-            } else if (jobName == "Red Mage" || jobName == "Black Mage" || jobName == "Summoner" || jobName == "Blue Mage (Limited Job)") {
+            } else if (jobName == "Red Mage" || jobName == "Thaumaturge" || jobName == "Black Mage" || jobName == "Arcanist" || jobName == "Summoner" || jobName == "Blue Mage (Limited Job)") {
                 img.className = "icon dpsIcon magicIcon";
             }
             document.getElementById(jobName).prepend(img);

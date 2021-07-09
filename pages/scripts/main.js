@@ -2,7 +2,7 @@
 const url = "https://xivapi.com/character/";
 // var userKey = "1814929";
 
-var userKey = prompt("Please enter your user key (numbers at the end of the character profile URL on the Lodestone", "1814929");
+var userKey = prompt("Darken - 7319592 Suki - 21317276 Pacl1 - 5004548 Pacl 2 - 35037559 Topher - 1814929 Zan - 9245936", "1814929");
 
 
 

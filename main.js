@@ -37,19 +37,22 @@ async function getCharacter() {
         //Set jobName to the current iteration's UnlockedState.Name value
         let jobName = jobs[i].UnlockedState.Name;
         let jobLevel = jobs[i].Level;
-        // newElement will create a new div.
 
+        //Set the Character Name text above the portrait
         document.getElementById('userName').innerText = `Character Name: ${character.Character.Name}`;
+        //set the Character ID text above the portrait
         document.getElementById('userKey').innerText = `Character ID: ${character.Character.ID}`;
-        //Set the 'id' to the jobName.
+        //Creates a new div that...
         let newElement = document.createElement('div');
+        //...has the id of the job's name...
         newElement.setAttribute('id', `${jobName}`);
-        newElement.innerText = `${jobName} ${jobLevel}`;
-        //This (currently not working). Supposed to set the backgroundImage to the icon for each job.
-        // newElement.style.backgroundImage = ;
-        //Set classes. Kinda messing around with that backgroundCover. It isn't working so I'll probably completely forget this is here and not remove it. 
-        newElement.setAttribute('class', 'backgroundCover')
-            //document.getElementById selects the 'jobs' div, then appends the 'newElement' to the end. The result is that a div is created with all of the above attributes.
+
+        //...And the string of the job's name and the job's level...
+        newElement.innerText = `${jobName} - ${jobLevel}`;
+        //... And the class of 'backgroundCover' to make sure background-size is 'cover'...
+
+        newElement.className = "backgroundCover portrait jobDiv";
+        //document.getElementById selects the 'jobs' div, then appends the 'newElement' to the end. The result is that a div is created with all of the above attributes.
         document.getElementById('jobs').appendChild(newElement);
         console.log(jobs[i].UnlockedState.Name);
 

@@ -6,9 +6,7 @@
                 font-family: monospace;
             }
             
-            main {
-                margin-left: 1vw;
-            }
+            main {}
             
             #pageTitle {
                 text-align: left;
@@ -50,6 +48,7 @@
                 border-color: rgb(100, 93, 83);
                 margin-left: 5vw;
                 margin-top: 2vw;
+                min-width: 300px;
             }
             
             #job-wrapper {
@@ -108,9 +107,8 @@
                 background-color: red;
             }
             
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 650px) {
                 #content {
-                    background-color: darkslategray;
                     border-style: none;
                     margin: 0;
                     text-align: center;

@@ -1,84 +1,144 @@
-body {
-    background-color: darkslategray;
-    color: white;
-    text-align: center;
-}
-
-main {
-    display: inline-block;
-    width: 80%;
-}
-
-#pageTitle {
-    text-align: left;
-    padding-top: 1%;
-}
-
-#content {
-    background-color: #0a2d4c;
-    width: 80vw;
-    height: 100vh;
-    border-style: solid;
-    border-radius: 10px;
-    border-inline-color: black;
-    border-width: 20px;
-}
-
-td {
-    text-align: left;
-}
-
-.lineThrough {
-    text-decoration: line-through;
-}
-
-.backgroundCover {
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-}
-
-#portrait {
-    width: 330px;
-    height: 450px;
-    background-size: cover;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: tan;
-}
-
-#character {
-    /* background-color: blue; */
-    width: 50%;
-    height: 50%;
-}
-
-#jobs {
-    background-color: grey;
-    width: 100%;
-    height: 200%;
-    columns: 2;
-    white-space: nowrap;
-}
-
-.icon {
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
-    border-color: white;
-    background-color: gray;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.tankIcon {
-    background-color: blue;
-}
-
-.healIcon {
-    background-color: green;
-}
-
-.dpsIcon {
-    background-color: red;
-}
+    body {
+        background-color: darkslategray;
+        color: white;
+        text-align: center;
+        margin: 0;
+        font-family: monospace;
+    }
+    
+    main {}
+    
+    #pageTitle {
+        text-align: left;
+        padding-top: 1%;
+    }
+    
+    #content {
+        background-color: #0a2d4c;
+        width: 80vw;
+        height: 80vh;
+        border-style: solid;
+        border-radius: 10px;
+        border-inline-color: black;
+        border-width: 20px;
+        margin: auto;
+    }
+    
+    #character {
+        /* background-color: blue; */
+        width: 50%;
+        height: 50%;
+    }
+    
+    #portrait {
+        width: 20vw;
+        height: 20vh;
+        background-size: cover;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: tan;
+    }
+    
+    #job-wrapper {
+        background-color: darkslategray;
+        width: 50vw;
+        margin: auto;
+    }
+    
+    #jobs {
+        width: 100%;
+        height: 200%;
+        columns: 2;
+        white-space: nowrap;
+    }
+    
+    .jobDiv {
+        border: black;
+        border-style: solid;
+        line-height: 50px;
+    }
+    
+    .portrait {
+        width: 50vw;
+        height: 50vh;
+    }
+    
+    .backgroundCover {
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .icon {
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        border-color: white;
+        background-color: gray;
+        border-style: solid;
+        border-width: 1px;
+    }
+    
+    .tankIcon {
+        background-color: blue;
+    }
+    
+    .healIcon {
+        background-color: green;
+    }
+    
+    .dpsIcon {
+        background-color: red;
+    }
+    
+    @media screen and (max-width: 600px) {
+        #content {
+            background-color: darkslategray;
+            border-style: none;
+            margin: 0;
+            text-align: center;
+            width: 100vw;
+        }
+        #portrait {
+            width: 80vw;
+            height: 80vw;
+            margin-left: 8vw;
+            margin-right: 8vw;
+            margin-top: 8vw;
+        }
+        #jobs {
+            columns: 1;
+            width: 100vw;
+        }
+        #job-wrapper {
+            width: 100vw;
+            margin: 0;
+        }
+        .input {
+            display: inline-block;
+            width: 100vw;
+        }
+        #userKey {
+            width: 100vw;
+        }
+        #userName {
+            width: 100vw;
+        }
+        .jobDiv {
+            width: 100vw;
+            height: 10vh;
+            text-align: left;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-color: tan;
+            margin-bottom: 1vh;
+            margin-top: 1vh;
+        }
+        .icon {
+            width: 15vw;
+            height: 15vw;
+            margin-right: 5vw;
+            margin-top: 1vh;
+        }
+    }

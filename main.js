@@ -51,7 +51,7 @@ async function getCharacter() {
         newElement.setAttribute('id', `${jobName}`);
 
         //...And the string of the job's name and the job's level...
-        newElement.innerText = `${jobName} ${jobLevel}`;
+        newElement.innerText = `${jobName} - ${jobLevel}`;
         //... And the class of 'backgroundCover' to make sure background-size is 'cover'...
 
         newElement.className = "backgroundCover portrait jobDiv";

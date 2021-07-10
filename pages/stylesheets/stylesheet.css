@@ -6,7 +6,9 @@
                 font-family: monospace;
             }
             
-            main {}
+            main {
+                margin-left: 1vw;
+            }
             
             #pageTitle {
                 text-align: left;

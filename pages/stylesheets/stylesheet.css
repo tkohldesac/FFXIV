@@ -67,6 +67,10 @@
                 columns: 3;
             }
             
+            .lineThrough {
+                text-decoration-line: line-through;
+            }
+            
             .jobDiv {
                 padding-top: 1.75vh;
                 padding-bottom: 1.75vh;

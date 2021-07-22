@@ -63,7 +63,7 @@ async function getCharacter() {
 
             var img = document.createElement('img');
             var jobLower = jobs[i].UnlockedState.Name.toLowerCase().replace(/ /g, "")
-            var jobImg = `pages/images/${jobLower}.png`
+            var jobImg = `/images/${jobLower}.png`
             img.src = `${jobImg}`;
             console.log(jobImg);
 
